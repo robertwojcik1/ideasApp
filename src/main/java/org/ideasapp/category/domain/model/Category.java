@@ -1,4 +1,4 @@
-package org.ideasapp.question.domain.model;
+package org.ideasapp.category.domain.model;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -7,21 +7,21 @@ import java.util.UUID;
 
 @Getter
 @Setter
-public class Question {
+public class Category {
 
     private UUID id;
     private String name;
 
-    public Question() {}
+    public Category() {}
 
-    public Question(String name) {
-        this.name = name;
+    public Category(String name) {
         this.id = UUID.randomUUID();
+        this.name = name;
     }
 
     @Override
     public String toString() {
-        return "Question{" +
+        return "Category{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';

@@ -7,21 +7,21 @@ import java.util.UUID;
 
 @Getter
 @Setter
-public class Question {
+public class Answer {
 
     private UUID id;
     private String name;
 
-    public Question() {}
+    public Answer() {}
 
-    public Question(String name) {
+    public Answer(String name) {
         this.name = name;
         this.id = UUID.randomUUID();
     }
 
     @Override
     public String toString() {
-        return "Question{" +
+        return "Answer{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';
